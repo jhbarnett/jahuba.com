@@ -1,16 +1,16 @@
-.contactPage {
+#contactPage {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.contactPage #greeting {
+#contactPage #greeting {
   flex: 1;
   font-size: 2.5em;
   margin: 2% 0 3% 0;
 }
 
-.contactPage > form {
+#contactPage > form {
   flex: 4;
   display: flex;
   flex-direction: column;
@@ -87,7 +87,7 @@ button[name='submit']:hover {
   color: white;
 }
 
-.contactPage #footer {
+#contactPage #footer {
   margin-top: 3.5%;
 }
 #footer div {
