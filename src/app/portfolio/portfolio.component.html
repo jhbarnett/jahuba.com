@@ -1,11 +1,13 @@
 <div id="portfolioPage">
-  <div class="topHalf">
-    <div class="appImg prevImg"></div>
-    <div class="appImg"></div>
-    <div class="appImg nextImg"></div>
+  <div #wrap class="wrap" (window:resize)="onResize($event)">
+    <button (click)="prev()">&larr;</button>
+    <div #slider class="slider">
+      <ul #items class="items">
+        <li class="item" *ngFor="let project of projects" [ngStyle]="{'background-image': 'url(' + project.image + ')'}"></li>
+      </ul>
+    </div>
+    <button (click)="next()">&rarr;</button>
   </div>
-  <div class="bottomHalf">
-    <div class="appName"></div>
-    <div class="appInfo"></div>
+  <div class="info">
   </div>
 </div>
