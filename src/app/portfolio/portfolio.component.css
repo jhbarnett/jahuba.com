@@ -1,77 +1,42 @@
 #portfolioPage {
   display: flex;
   height: 100%;
+  flex-direction: column;
 }
 
-  #portfolioPage .carousel {
+  #portfolioPage .topHalf {
     flex: 1;  
     display: flex;
-    flex-direction: column;
+    background-color: yellow;
   }
 
-    .carousel .mainApp {
-      flex: 2.5;
-      display: flex;
-      justify-content: center;
-    }
-
-    .carousel .prevApp {
+    .topHalf .appImg {
       flex: 1;
-      display: flex;
-      justify-content: center;
-      max-height: 25%;
     }
 
-    .carousel .nextApp {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      max-height: 25%;
+    .topHalf .nextImg {
+      background-color: green;
     }
-     
-      .carousel .mainApp a {
-        width: 90%;
-        height: 90%;
-        align-self: center;
-        background: no-repeat center/100% url(../../../assets/butter.png);
-        box-shadow: -5px 0px 13px 4px #ccc
-      }
 
-      .carousel .prevApp a {
-        height: 90%;
-        width: 90%;
-        align-self: flex-start;
-        background: no-repeat bottom/100% url(../../../assets/line4line.png);
-        box-shadow: -5px 5px 13px 4px #ccc;
-      }
+    .topHalf .prevImg {
+      background-color: purple;
+    }
 
-      .carousel .nextApp a {
-        height: 90%;
-        width: 90%;
-        align-self: flex-end;
-        background: no-repeat top/100% url(../../../assets/iluddite.png);
-        box-shadow: -5px -5px 13px 4px #ccc;
-      }
-
-  #portfolioPage .description {
+  #portfolioPage .bottomHalf {
     flex: 1;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
   }
 
-    .description .appTitle {
+    .bottomHalf .appName {
       flex: 1;
-      background-color: purple; 
+      max-width: 30%;
+      background-color: orange;
     }
 
-    .description .appDesc {
-      flex: 2.5;
-      background-color: orange; 
-    }
-
-    .description .appSrc {
+    .bottomHalf .appInfo {
       flex: 1;
-      background-color: pink; 
+      background-color: blue;
+      max-width: 40%;
     }
-
 
