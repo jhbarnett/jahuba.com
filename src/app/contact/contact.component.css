@@ -1,16 +1,16 @@
-.contactPage {
+#contactPage {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.contactPage #greeting {
+#contactPage #greeting {
   flex: 1;
   font-size: 2.5em;
   margin: 2% 0 3% 0;
 }
 
-.contactPage > form {
+#contactPage > form {
   flex: 4;
   display: flex;
   flex-direction: column;
@@ -24,18 +24,10 @@ input {
   border-bottom: solid 2px  black;
   font-size: 1.5em;
   color: black;
+  width: 96.5%;
   margin: 2% 0;
   transition: all 0.3s;
-}
-
-input[name=name] {
-  flex: 1;
-  width: 100%;
-}
-
-input[name=email] {
-  flex: 1;
-  width: 100%; 
+  padding: 0 2%;
 }
 
 textarea[name=note] {
@@ -43,7 +35,7 @@ textarea[name=note] {
   width: 99%;
   height: 10em;
   max-height: 10em;
-  max-width: 98.5%;
+  max-width: 95.5%;
   resize: none;
   border: none;
   border-right: solid 2px black;
@@ -51,6 +43,7 @@ textarea[name=note] {
   margin: 3% 0;
   font-size: 1.5em;
   transition: all 0.3s;
+  padding: 0 2%;
 }
 
 textarea:focus, input:focus{
@@ -94,7 +87,7 @@ button[name='submit']:hover {
   color: white;
 }
 
-.contactPage #footer {
+#contactPage #footer {
   margin-top: 3.5%;
 }
 #footer div {

@@ -1,0 +1,42 @@
+#portfolioPage {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+  #portfolioPage .topHalf {
+    flex: 1;  
+    display: flex;
+    background-color: yellow;
+  }
+
+    .topHalf .appImg {
+      flex: 1;
+    }
+
+    .topHalf .nextImg {
+      background-color: green;
+    }
+
+    .topHalf .prevImg {
+      background-color: purple;
+    }
+
+  #portfolioPage .bottomHalf {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+    .bottomHalf .appName {
+      flex: 1;
+      max-width: 30%;
+      background-color: orange;
+    }
+
+    .bottomHalf .appInfo {
+      flex: 1;
+      background-color: blue;
+      max-width: 40%;
+    }
+

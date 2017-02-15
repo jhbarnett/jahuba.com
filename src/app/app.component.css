@@ -12,6 +12,7 @@
   display: flex;
   width: 100%;
   box-shadow: -2px 4px 3px -5px black;
+  padding: 0 2em 0 1em;
 }
 
 .header .title {
@@ -29,4 +30,5 @@
 
 .content {
   flex: 11;
+  padding-top: .075%;
 }
