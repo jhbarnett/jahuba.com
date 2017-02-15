@@ -3,33 +3,33 @@
   height: 100%;
 }
 
-  #portfolioPage .gallery {
+  #portfolioPage .carousel {
     flex: 1;  
     display: flex;
     flex-direction: column;
   }
 
-    .gallery .mainApp {
+    .carousel .mainApp {
       flex: 2.5;
       display: flex;
       justify-content: center;
     }
 
-    .gallery .prevApp {
+    .carousel .prevApp {
       flex: 1;
       display: flex;
       justify-content: center;
       max-height: 25%;
     }
 
-    .gallery .nextApp {
+    .carousel .nextApp {
       flex: 1;
       display: flex;
       justify-content: center;
       max-height: 25%;
     }
      
-      .gallery .mainApp a {
+      .carousel .mainApp a {
         width: 90%;
         height: 90%;
         align-self: center;
@@ -37,7 +37,7 @@
         box-shadow: -5px 0px 13px 4px #ccc
       }
 
-      .gallery .prevApp a {
+      .carousel .prevApp a {
         height: 90%;
         width: 90%;
         align-self: flex-start;
@@ -45,7 +45,7 @@
         box-shadow: -5px 5px 13px 4px #ccc;
       }
 
-      .gallery .nextApp a {
+      .carousel .nextApp a {
         height: 90%;
         width: 90%;
         align-self: flex-end;
