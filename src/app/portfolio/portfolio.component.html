@@ -8,6 +8,8 @@
     </div>
     <button (click)="next()"><span *ngIf="pos < projects.length - 1">&rarr;</span></button>
   </div>
-  <div class="info">
+  <div class="info" >
+    <div class="title" [innerHtml]="selection.title"></div>
+    <div class="description">{{selection.description}}</div>
   </div>
 </div>

@@ -11,6 +11,7 @@ export class PortfolioComponent implements OnInit {
   @ViewChild('items') items:ElementRef; 
   projects = PROJECTS;
   pos = 0;
+  selection = this.projects[this.pos];
   
   setTransform() {
     this.items.nativeElement.style.transform = 'translate3d(' + (-this.pos * this.items.nativeElement.offsetWidth) + 'px,0,0)';
@@ -19,11 +20,13 @@ export class PortfolioComponent implements OnInit {
   prev() {
     this.pos = Math.max(this.pos - 1, 0);
     this.setTransform();
+    this.selection = this.projects[this.pos]
   };
 
   next() {
     this.pos = Math.min(this.pos + 1, this.items.nativeElement.children.length - 1);
     this.setTransform();
+    this.selection = this.projects[this.pos]
   };
 
 
@@ -31,7 +34,8 @@ export class PortfolioComponent implements OnInit {
     this.setTransform;
   }
   
-  constructor() {}
+  constructor() {
+  }
 
   ngOnInit() {}
 }
