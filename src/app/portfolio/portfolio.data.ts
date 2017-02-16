@@ -1,21 +1,21 @@
 const myProjects = [
   {
     title: "Line4Line",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    description: "A web app for individuals to curate stories in tandem, one line at a time. Integrated MV* architecture alongside a MERN stack. Incorporated Socket.io to impart a seamless and responsive UX/UI. Used agile and Git workflows to coordinate a clean and reliable product",
     image: "../../assets/line4line.png",
     github: "https://github.com/TEAManticore/Line4Line",
-    link: "www.line4line.us"
+    link: "http://www.line4line.us"
   },
   {
     title: "Butter",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    description: "Personal finance application to monitor credit accounts, spending, and more. Employed React and Redux to efficiently manipulate front-end responsiveness. Integrated LESS and Bootstrap to foster an engaging and intuitive UI/UX. Prioritized lean and agile methodologies to deliver a consumer-driven MVP",
     image: "../../assets/butter.png",
     github: "https://github.com/ChurnDownForWhat/butter",
     link: "https://abutterapp.herokuapp.com"
   },
   {
     title: "iLuddite",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    description: "A platform for Facebook friends to discover, preview, and review books. Synthesized data along RESTful standards to improve client-facing accessibility. Utilized MongoDB, Express, Node, and React to deliver a scalable SPA. Managed React lifecycles and stateless components for modular development.",
     image: "../../assets/iluddite.png",
     github: "https://github.com/TEAManticore/iLuddite-2.0",
     link: "https://i-luddite.herokuapp.com"

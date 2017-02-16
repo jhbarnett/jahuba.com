@@ -31,6 +31,7 @@ button {
   opacity: 0.5;
   -webkit-transition: opacity 300ms ease-out;
   transition: opacity 300ms ease-out;
+  z-index: 2;
 }
 button:hover {
   opacity: 1;
@@ -95,18 +96,33 @@ button:last-child {
   max-width: 60%;
 }
 
-.title {
-  flex: 3;
-  height: auto;
+.left {
   text-align: right;
-  padding: 3% 5%;
+  padding-right: 5%; 
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  border-right: 2px solid black;
+  justify-content: center;
+}
+
+.left #title {
+  text-decoration: none;
+  color: black;
+  text-align: right;
   font-size: 2em;
+  transition: all .3s ease-in-out;
+}
+
+.left #title:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .description {
   flex: 7;
-  height: auto;
-  border-left: 2px solid black;
-  padding: 3% 5%;
+  padding: 0 5%;
   font-size: 1em;
 }
