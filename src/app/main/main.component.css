@@ -6,7 +6,6 @@
   .leftHalf {
     flex: 1;
     display: flex;
-    background-color: orange;
     justify-content: center;
     align-items: center;
   }
@@ -14,21 +13,19 @@
     .gallery {
       height: 70%;
       width: 70%;
-      background-color: blue;
       display: flex;
       flex-flow: row wrap;
     }
 
       .galleryImg {
         flex: 1;
-        border: 1px solid white;
+        border: 1px solid black;
         min-width: 25%;
         min-height: 25%;
       }
 
 .rightHalf {
   flex: 1;
-  background-color: green;
   flex-flow: column;
   display: flex;
   justify-content: center;
@@ -38,5 +35,5 @@
   #bio {
     width: 70%;
     height: 70%;
-    background-color: red;
+    border: 1px solid black;
   }
