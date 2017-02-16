@@ -27,6 +27,7 @@
 .header .nav {
   flex: 1.25;
   text-align: right;
+  padding-right: 1%;
 }
 
 .content {

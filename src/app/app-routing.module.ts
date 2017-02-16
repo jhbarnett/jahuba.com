@@ -9,7 +9,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
-  { path: 'blog',  component: BlogComponent },
+  // { path: 'blog',  component: BlogComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'portfolio',     component: PortfolioComponent },
   { path: '**', redirectTo: '/', pathMatch: 'full'}
