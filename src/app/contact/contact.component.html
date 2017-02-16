@@ -2,15 +2,15 @@
   <div id="greeting">Drop Me A Message.</div>
   <form>
     <div>
-      <input type="text" name="name" placeholder="Name" required autocomplete="off" />
+      <input type="text" name="name" placeholder="Name" required autocomplete="off" [(ngModel)]="model.name"/>
     </div>
     <div>
-      <input type="text" name="email" placeholder="Email" required autocomplete="off"/>
+      <input type="text" name="email" placeholder="Email" required autocomplete="off" [(ngModel)]="model.email"/>
     </div>
     <div>
-      <textarea type="text" name="note" placeholder="Note" required></textarea>
+      <textarea type="text" name="note" placeholder="Note" required [(ngModel)]="model.message"></textarea>
     </div>
-    <button type="submit" name="submit">Send</button>
+    <button type="submit" name="submit" (click)="mailForm($event)">Send</button>
   </form> 
   <div id="footer">
     <div> Jason Barnett&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;(310)&nbsp;957-1907&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;jason@thebarnetts.ws</div>

@@ -14,7 +14,7 @@
   flex: 4;
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 35%;
   align-items: stretch;
   justify-content: space-between;
 }
@@ -70,7 +70,6 @@ input:focus::placeholder {
   color: #969696;
 }
 
-
 button[name="submit"] {
   margin: 2% 0;
   height: 2em;
@@ -85,6 +84,10 @@ button[name="submit"] {
 button[name='submit']:hover {
   background-color: black;
   color: white;
+}
+
+button[name='submit']:focus {
+  outline: none;
 }
 
 #contactPage #footer {
