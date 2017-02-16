@@ -1,5 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef, HostListener } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import PROJECTS from './portfolio.data';
 
 @Component({
@@ -9,10 +8,8 @@ import PROJECTS from './portfolio.data';
 })
 
 export class PortfolioComponent implements OnInit {
-  @ViewChild('wrap') wrap:ElementRef; 
   @ViewChild('items') items:ElementRef; 
-  @ViewChild('slider') slider:ElementRef; 
-  
+  projects = PROJECTS;
   pos = 0;
   
   setTransform() {
@@ -22,13 +19,11 @@ export class PortfolioComponent implements OnInit {
   prev() {
     this.pos = Math.max(this.pos - 1, 0);
     this.setTransform();
-    console.log("prev works", "position:", this.pos);
   };
 
   next() {
     this.pos = Math.min(this.pos + 1, this.items.nativeElement.children.length - 1);
     this.setTransform();
-    console.log("next works", "position:", this.pos);
   };
 
 
@@ -36,17 +31,9 @@ export class PortfolioComponent implements OnInit {
     this.setTransform;
   }
   
-  constructor(private sanitizer: DomSanitizer) { }
+  constructor() {}
 
-  ngOnInit() {
-    console.log(this.projects)
-  }
-
-  projects = PROJECTS;
-
-  sanitize = ((imageURL) => {return `url(${this.sanitizer.bypassSecurityTrustUrl(imageURL)})`}).bind(this)
-  
-
+  ngOnInit() {}
 }
 
 

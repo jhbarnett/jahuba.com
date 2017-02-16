@@ -2,19 +2,18 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: .5%;
   height: 99.5%;
+  margin-top: .5%;
 }
-
 .wrap {
-  flex:1;
+  flex:3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
 button {
@@ -22,10 +21,11 @@ button {
   -ms-flex: 2;
   flex: 2;
   border: none;
-  border-radius: 50%;
   background: transparent;
   color: black;
   font-size: 40px;
+  height: 100%;
+  width: 20%;
   align-self: center;
   outline: none;
   opacity: 0.5;
@@ -35,13 +35,38 @@ button {
 button:hover {
   opacity: 1;
 }
+
+button:first-child {
+  border-right: 2px solid black;
+  box-shadow: 0 0 0 0 white, 
+              15px 0px 20px -5px #ccc,
+              0 0 0 0 white, 
+              0 0 0 0 white;
+}
+button:last-child {
+  border-left: 2px solid black;
+  box-shadow: 0 0 0 0 white, 
+              0 0 0 0 white, 
+              0 0 0 0 white,
+              -15px 0px 20px -5px #ccc;
+}
+
 .slider {
   -webkit-box-flex: 4;
   -ms-flex: 4;
   flex: 4;
   overflow: hidden;
+  min-width: 65%;
+  box-shadow: 2px -14px 15px -10px #ccc,
+              0 0 0 0 white, 
+              -2px 14px 15px -10px #ccc, 
+               0 0 0 0 white;
+  margin: 2% 0%;
 }
 .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 0;
   list-style-type: none;
   white-space: nowrap;
@@ -54,15 +79,15 @@ button:hover {
 }
 .item {
   display: inline-block;
-  width: 100%;
-  min-height: 15em;
-  font-size: 25px;
-  letter-spacing: -0.03em;
+  min-width: 100%;
+  min-height: 38.5em;
+  font-size: 10px;
+  background-color: transparent;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .info {
-  flex: 1;
+  flex: 2;
 }
