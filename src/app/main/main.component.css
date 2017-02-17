@@ -21,9 +21,8 @@
 
       .galleryImg {
         flex: 1 auto;
-        border: .0015px dotted rgba(0,0,0,.1);
-        min-width: 25%;
-        min-height: 25%;
+        flex-basis: 33.33%;
+        margin: .005%;
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -38,16 +37,44 @@
         z-index: 2;
       }
 
-        .galleryImg div {
+        .galleryImg > div {
           height: 100%;
           width: 100%;
           transition: all .3s ease-in-out;
           z-index: 3;
         }
 
-        .galleryImg div:hover {
-          background-color: rgba(255, 255, 255, 0.5);
+        .galleryImg > div:hover {
+          background-color: rgba(255, 255, 255, 0.7);
         }
+
+          .galleryImg .details {
+            display: flex;
+            flex-direction: column;
+            align-items: space-around;
+            justify-content: center;
+            color: transparent;
+            transition: all .3s ease-in-out;
+            z-index: 4;
+            padding: 25% 0;
+            height: 50%;
+            width: 100%;
+            text-align: center;
+          }
+
+          .galleryImg .details:hover {
+            color: black;
+            z-index: 4;
+            font-weight: bold;
+          }
+
+            .details .location {
+              flex: 1;
+            }
+
+            .details .date {
+              flex: 1;
+            }
 
 .rightHalf {
   flex: 1;
