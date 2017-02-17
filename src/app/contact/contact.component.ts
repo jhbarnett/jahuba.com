@@ -18,7 +18,7 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {}
 
-  model = new Note()
+  model = new Note();
 
   mailForm(e) {
    const subject = `${this.model.name} reaching out!`;

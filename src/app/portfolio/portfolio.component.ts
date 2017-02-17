@@ -32,10 +32,9 @@ export class PortfolioComponent implements OnInit {
 
   onResize(event) {
     this.setTransform;
-  }
+  };
   
-  constructor() {
-  }
+  constructor() {}
 
   ngOnInit() {}
 }

@@ -16,13 +16,12 @@
       display: flex;
       flex-flow: row wrap;
       box-shadow: -4px -3px 18px 7px #ccc;
-      background-color: none;
+      background-color: transparent;
     }
 
       .galleryImg {
         flex: 1 auto;
         flex-basis: 33.33%;
-        margin: .005%;
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -51,15 +50,11 @@
           .galleryImg .details {
             display: flex;
             flex-direction: column;
-            align-items: space-around;
-            justify-content: center;
             color: transparent;
             transition: all .3s ease-in-out;
             z-index: 4;
-            padding: 25% 0;
-            height: 50%;
+            height: 100%;
             width: 100%;
-            text-align: center;
           }
 
           .galleryImg .details:hover {
@@ -70,10 +65,16 @@
 
             .details .location {
               flex: 1;
+              text-align: left;
+              font-size: .85em;
+              padding: .25em; 
             }
 
             .details .date {
-              flex: 1;
+              text-align: right;
+              align-self: flex-end;
+              font-size: .75em; 
+              padding: .25em; 
             }
 
 .rightHalf {
