@@ -10,3 +10,10 @@ body {
   color: black;
   font-family: 'Questrial', sans-serif; 
 }
+
+#loading {
+  text-align: center;
+  font-size: 4em;
+  height: 5%;
+  margin: 95%;
+}
