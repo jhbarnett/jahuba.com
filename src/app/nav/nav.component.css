@@ -14,9 +14,9 @@ div > a {
 }
 
 div > a:hover {
-  border-top: 2px dashed black;
+  border-top: 2px solid black;
 }
 
 .active {
-  border-top: 2px dashed black;
+  border-top: 2px solid black;
 }
