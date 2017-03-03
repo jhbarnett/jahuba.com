@@ -128,3 +128,8 @@ button:last-child {
   max-height: 50%;
   overflow: scroll;
 }
+
+.description a {
+  text-decoration: none;
+  color: blue;
+}

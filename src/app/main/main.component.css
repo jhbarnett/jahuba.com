@@ -94,3 +94,12 @@
     max-height: 70%;
     overflow: scroll;
   }
+
+  #bio p {
+    text-indent: 25px;
+  }
+
+    #bio a {
+      text-decoration: none;
+      color: blue;
+    }
