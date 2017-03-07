@@ -1,5 +1,5 @@
 <div id="contactPage">
-  <div id="greeting">Drop Me A Message.</div>
+  <div id="greeting">Please, Drop Me A Note.</div>
   <form>
     <div>
       <input type="text" name="name" placeholder="Name" required autocomplete="off" [(ngModel)]="model.name"/>
@@ -8,7 +8,7 @@
       <input type="text" name="email" placeholder="Email" required autocomplete="off" [(ngModel)]="model.email"/>
     </div>
     <div>
-      <textarea type="text" name="note" placeholder="Note" required [(ngModel)]="model.message"></textarea>
+      <textarea type="text" name="note" placeholder="Message" required [(ngModel)]="model.message"></textarea>
     </div>
     <button type="submit" name="submit" (click)="mailForm($event)">Send</button>
   </form> 

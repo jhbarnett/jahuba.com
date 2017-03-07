@@ -35,6 +35,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-around;
+  width: 400px;
 }
 
 input {
@@ -42,21 +43,16 @@ input {
   border-bottom: solid 2px  black;
   font-size: 1.5em;
   color: black;
-  width: 96.5%;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding: 0 2%;
-  min-width: 365px;
+  width: 100%;
 }
 
 textarea[name=note] {
   -webkit-box-flex: 4;
       -ms-flex: 4;
           flex: 4;
-  width: 99%;
   height: 10em;
-  max-height: 10em;
-  max-width: 95.5%;
   resize: none;
   border: none;
   border-right: solid 2px black;
@@ -66,8 +62,7 @@ textarea[name=note] {
   font-family: Questrial;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding: 0 2%;
-  min-width: 365px;
+  width: 98%;
 }
 
 textarea:focus, input:focus{
@@ -144,10 +139,8 @@ textarea[name=note]:invalid {
 }
 
 button[name="submit"] {
-  margin: 2% 0;
-  height: 2em;
-  min-height: 50px;
-  width: 100.5%;
+  height: 50px;
+  width: 100%;
   border: 2px solid black;
   background-color: white;
   color: black;
