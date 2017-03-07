@@ -48,5 +48,6 @@
       -ms-flex: 11;
           flex: 11;
   padding-top: .075%;
+  overflow-y: scroll;
 }
 
