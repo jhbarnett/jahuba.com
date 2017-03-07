@@ -1,39 +1,67 @@
 #blogPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 100%;
 }
 
   #blogPage .blogPosts {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
     .blogPosts .filterParams {
-      flex: 1;
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
     }
 
       .filterParams .inputParams {
-        flex: 3;
+        -webkit-box-flex: 3;
+            -ms-flex: 3;
+                flex: 3;
         background-color: yellow;
       }
 
       .filterParams .sortParams {
-        flex: 1;
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
         background-color: green;
       }
 
     .blogPosts .posts {
-      flex: 14;
+      -webkit-box-flex: 14;
+          -ms-flex: 14;
+              flex: 14;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       background-color: red;
-      align-items: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
     }
 
       .posts .post {
-        flex: 1;
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
         width: 95%;
         height: 10%;
         background-color: pink;
@@ -41,18 +69,29 @@
       }
 
   #blogPage .selectedPost {
-    flex: 1.5;
+    -webkit-box-flex: 1.5;
+        -ms-flex: 1.5;
+            flex: 1.5;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: purple;
   }
 
     .selectedPost .postTitle {
-      flex: 1;
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
       background-color: blue;
     }
 
     .selectedPost .postContent {
-      flex: 9;
+      -webkit-box-flex: 9;
+          -ms-flex: 9;
+              flex: 9;
       background-color: orange;
     }
