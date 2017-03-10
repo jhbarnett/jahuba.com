@@ -1,7 +1,7 @@
 const myProjects = [
   {
     title: "Line4Line",
-    description: "Line4Line is a web application for individuals to curate stories in tandem, one line at a time. Much like MadLibs, users contribute to a story with limited knowledge of the over-arching theme. It was built using React, Node, Express, MongoDB, and Socket.io.",
+    description: "Line4Line is a web application for individuals to curate stories in tandem, one line at a time. Like Mad Libs, users contribute to a story with limited knowledge of the over-arching theme. It was built using React, Node, Express, MongoDB, and Socket.io.",
     image: "../../assets/line4line.jpg",
     github: "https://github.com/TEAManticore/Line4Line",
     link: "http://www.line4line.us"
