@@ -16,7 +16,6 @@ div > a {
   font-size: 1.5em;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  height: 50%;
   padding: 1% 2% 0;
 }
 
@@ -26,4 +25,10 @@ div > a:hover {
 
 .active {
   border-top: 2px solid black;
+}
+
+@media only screen and (max-width: 700px) {
+  div > a {
+    font-size: 1.25em;
+  }
 }

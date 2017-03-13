@@ -22,13 +22,13 @@
   width: 100%;
   box-shadow: -2px 4px 3px -5px black;
   padding: 0 2em 0 1em;
-  min-height: 8.5%;
+  align-items: baseline;
 }
 
 .header .title {
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
   text-align: left;
   font-size: 4em; 
   text-decoration: none;
