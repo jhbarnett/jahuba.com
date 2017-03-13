@@ -1,12 +1,12 @@
 <div id="portfolioPage">
   <div #wrap class="wrap" (window:resize)="onResize($event)">
-    <button (click)="prev()"><span *ngIf="pos > 0">&larr;</span></button>
+    <button class="mobile_hide"(click)="prev()"><span *ngIf="pos > 0">&larr;</span></button>
     <div #slider class="slider">
       <ul #items class="items">
         <li class="item" *ngFor="let project of projects" [ngStyle]="{'background-image': 'url(' + project.image + ')'}"></li>
       </ul>
     </div>
-    <button (click)="next()"><span *ngIf="pos < projects.length - 1">&rarr;</span></button>
+    <button class="mobile_hide" (click)="next()"><span *ngIf="pos < projects.length - 1">&rarr;</span></button>
   </div>
   <div class="info" >
     <div class="left">
@@ -16,5 +16,13 @@
     {{selection.description}}
     Please feel free to review my code <a href={{selection.github}}>here</a>.
     </div>
+  </div>
+  <div class="mobileButtons">
+    <button (click)="prev()">
+      <span *ngIf="pos > 0">&larr;</span>
+    </button>
+    <button (click)="next()">
+      <span *ngIf="pos < projects.length - 1">&rarr;</span>
+    </button>
   </div>
 </div>

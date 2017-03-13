@@ -183,3 +183,31 @@ button[name='submit']:focus {
   height: 2em;
   width: auto;
 }
+
+@media only screen and (max-width: 700px) {
+  #contactPage {
+    max-width: 90%;
+  }
+
+  #contactPage #greeting {
+    font-size: 2em;
+  }
+
+  #contactPage > form {
+    width: 90%;
+    min-height: 410px;
+  }
+
+  textarea[name=note] {
+    margin-top: 5px;
+  }
+
+  button[name="submit"] {
+    width: 101%;
+  }
+
+  .mobile_hide {
+    display: none;
+  }
+
+}

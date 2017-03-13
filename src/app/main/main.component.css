@@ -133,6 +133,10 @@
       color: blue;
     }
 
+  #gallery_helper {
+    display: none;
+  }
+
 @media only screen and (max-width: 700px) {
   #mainPage {
     flex-direction: column-reverse;
@@ -151,7 +155,9 @@
   #bio {
     width: 90%;
     max-height: auto;
-    justify: left;
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 10px;
   }
 
   .gallery {
@@ -162,6 +168,11 @@
   .galleryImg {
     min-height: 150px;
     min-width: 50%;
+  }
+
+  #gallery_helper {
+    display: block;
+    margin-bottom: 10px;
   }
 
   .mobile_hide {
