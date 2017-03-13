@@ -10,6 +10,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-family: Questrial, sans-serif;
 }
 
 .header {
@@ -23,6 +24,7 @@
   box-shadow: -2px 4px 3px -5px black;
   padding: 0 2em 0 1em;
   align-items: baseline;
+  min-height: 58px;
 }
 
 .header .title {
@@ -58,7 +60,7 @@
   overflow-y: scroll;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 720px) {
   .header .title_large {
     display: none;
   }
