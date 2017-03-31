@@ -20,7 +20,7 @@ body {
 
 
 /* Safari only overrides */
-@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { @media {
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) and(min-width:700px){ @media {
   #mainPage {
     transform: translateY(6em) !important;
   }
@@ -65,7 +65,7 @@ body {
 
 /* Safari 10.1+ */
 
-@media not all and (min-resolution:.001dpcm) { @media {
+@media not all and (min-resolution:.001dpcm) and(min-width:700px) { @media {
   #mainPage {
     transform: translateY(6em) !important;
   }

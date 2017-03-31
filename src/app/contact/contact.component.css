@@ -46,6 +46,7 @@ input {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   width: 100%;
+  border-radius: 0;
 }
 
 textarea[name=note] {
@@ -63,6 +64,7 @@ textarea[name=note] {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   width: 98%;
+  border-radius: 0;
 }
 
 textarea:focus, input:focus{
