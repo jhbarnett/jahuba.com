@@ -17,3 +17,92 @@ body {
   height: 5%;
   margin: 95%;
 }
+
+
+/* Safari only overrides */
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { @media {
+  #mainPage {
+    transform: translateY(6em) !important;
+  }
+
+    .gallery {
+      flex-basis: auto !important;
+    }
+
+      .galleryImg {
+        min-height: 150px !important;
+      }
+
+  #portfolioPage .wrap button {
+    min-height: 450px !important;
+  }
+
+    .info {
+      transform: translateY(4em) !important;
+    }
+
+    .info .left {
+      min-height: 100px !important;
+    }
+
+    .mobileButtons {
+      transform: translateY(6em) !important; 
+    }
+
+  #contactPage {
+    transform: translateY(2em) !important; 
+  }
+
+  #contactPage input {
+    margin-bottom: 30px !important;
+  }
+
+  #contactPage textarea {
+    margin-bottom: 30px !important;
+  }
+
+}}
+
+/* Safari 10.1+ */
+
+@media not all and (min-resolution:.001dpcm) { @media {
+  #mainPage {
+    transform: translateY(6em) !important;
+  }
+
+    .gallery {
+      flex-basis: auto !important;
+    }
+
+      .galleryImg {
+        min-height: 150px !important;
+      }
+
+  #portfolioPage .wrap button {
+    min-height: 450px !important;
+  }
+
+    .info {
+      transform: translateY(4em) !important;
+    }
+
+    .info .left {
+      min-height: 100px !important;
+    }
+
+    .mobileButtons {
+      transform: translateY(6em) !important; 
+    }
+
+  #contactPage {
+    transform: translateY(2em) !important; 
+  }
+
+  #contactPage input {
+    margin-bottom: 30px !important;
+  }
+
+  #contactPage textarea {
+    margin-bottom: 30px !important;
+  }
+}}
